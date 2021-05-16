@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteToSelf", "NoteToSelf\No
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteToSelf.Database", "NoteToSelf.Database\NoteToSelf.Database.csproj", "{BE774099-1998-4132-BE3D-CCF9C2C3AD56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteToSelf.MongoDatabase", "NoteToSelf.MongoDatabase\NoteToSelf.MongoDatabase.csproj", "{93714915-8D8A-40A7-85E0-C06FA8013548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteToSelf.Porter", "NoteToSelf.Porter\NoteToSelf.Porter.csproj", "{022CB557-A7C5-4692-B83F-874549FD06DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BE774099-1998-4132-BE3D-CCF9C2C3AD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE774099-1998-4132-BE3D-CCF9C2C3AD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE774099-1998-4132-BE3D-CCF9C2C3AD56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93714915-8D8A-40A7-85E0-C06FA8013548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93714915-8D8A-40A7-85E0-C06FA8013548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93714915-8D8A-40A7-85E0-C06FA8013548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93714915-8D8A-40A7-85E0-C06FA8013548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022CB557-A7C5-4692-B83F-874549FD06DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022CB557-A7C5-4692-B83F-874549FD06DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022CB557-A7C5-4692-B83F-874549FD06DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022CB557-A7C5-4692-B83F-874549FD06DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
