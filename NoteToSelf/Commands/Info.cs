@@ -18,14 +18,6 @@ namespace NoteToSelf.Commands
                 Color = Color.Blue
             };
             var guilds = await Context.Client.GetGuildsAsync();
-            var channels = 0;
-            var users = 0;
-
-            foreach (IGuild Guild in guilds)
-            {
-                channels += (await Guild.GetChannelsAsync()).Count;
-                users += (await Guild.GetUsersAsync()).Count;
-            }
 
             var usersWithNotes = Context.Database.Users.Count();
             var noteCount = 0;
@@ -35,8 +27,6 @@ namespace NoteToSelf.Commands
 
             builder.AddField("Bot Statistics:", "Number of Guilds, Channels & Users...")
                 .AddField("Guilds: ", guilds.Count, true)
-                .AddField("Channels: ", channels, true)
-                .AddField("Users: ", users, true)
                 .AddField("Note Statistics:", "Number of Notes...")
                 .AddField("Users With Notes: ", usersWithNotes, true)
                 .AddField("Total Notes: ", noteCount, true);

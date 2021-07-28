@@ -11,7 +11,8 @@ namespace NoteToSelf.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserProfile>(x => {
+            modelBuilder.Entity<UserProfile>(x =>
+            {
                 x.HasMany(y => y.Notes)
                     .WithOne()
                     .OnDelete(DeleteBehavior.Cascade);
